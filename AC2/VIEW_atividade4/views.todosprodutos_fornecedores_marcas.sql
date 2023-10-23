@@ -1,0 +1,1 @@
+SELECT * FROM views.todosprodutos_fornecedores_marcas;

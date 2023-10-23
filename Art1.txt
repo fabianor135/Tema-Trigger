@@ -1,0 +1,18 @@
+A Descoberta de Conhecimento em Bancos de Dados Geográficos (DCBDG) desempenha um papel 
+crucial na extração de informações de dados geográficos complexos. Esta abordagem, 
+que combina Inteligência Artificial e Bancos de Dados, busca identificar padrões
+espaciais e conexões entre dados geográficos e não-geográficos, desempenhando 
+um papel fundamental na compreensão de nosso mundo interconectado. 
+Esta introdução destaca a importância da DCBDG na análise de informações geoespaciais.
+Resumo para Artigo cientifico
+
+Dados geográficos estão se tornando cada vez mais complexos,
+ exigindo abordagens inovadoras para extrair informações valiosas.
+ O método de Descoberta de Conhecimento Geoespacial em Bancos de Dados (DCBDG) desempenha um papel fundamental em desvendar as complexidades dos dados geográficos. 
+Ao unir as capacidades da Inteligência Artificial e sistemas de bancos de dados,
+ o DCBDG tem como objetivo revelar padrões espaciais e conexões entre dados geográficos e não geográficos, promovendo uma compreensão profunda do nosso mundo interconectado. Esta introdução destaca a importância fundamental do DCBDG 
+na análise de informações geoespaciais, preparando o terreno para uma exploração mais aprofundada no artigo científico.
+
+Descoberta de Conhecimento em Bancos de Dados Geográficos (DCBDG), Inteligência Artificial, Mineração de Dados, Sistemas de Gerenciamento de Banco de Dados (SGBD), Dados Espaciais, Árvores de Decisão Nebulosas, Linguagem de Consulta LARECOS, Sistema de Informações Geográficas (SIG).
+
+Keywords: Geospatial Knowledge Discovery, Artificial Intelligence, Data Mining, Database Management Systems, Spatial Data, Fuzzy Decision Trees, LARECOS, Geographic Information System (GIS).

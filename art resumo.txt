@@ -1,0 +1,93 @@
+Descoberta de conhecimento em banco de dados (em inglês Knowledge Discovery in Databases) é um conceito utilizado
+para denominar a exploração de informações implícitas em grandes volumes de dados. Essa tecnologia surgiu pela
+necessidade e pela dificuldade de explorar grandes bancos de dados. A Descoberta de Conhecimento em Bancos de
+Dados Geográficos (DCBDG) é um tipo particular de descoberta, pois está ligada à extração de características e padrões
+espaciais interessantes, à identificação de relacionamentos entre dados espaciais e não-espaciais/ descritivos/
+convencionais, restrições entre objetos geográficos e outras características não explicitamente armazenadas nestes
+bancos de dados. Os dados convencionais descrevem características como: nome e população de um município. Os
+dados espaciais representam a localização de dados descritivos sobre a superfície da terra e são representados,
+geralmente, por três primitivas geométricas: ponto, linha e área.
+Neste contexto, dois enfoques diferentes, porém complementares, foram desenvolvidos, na tentativa de
+solucionar esses problemas: um, pela comunidade de Inteligência Artificial e outro, pela comunidade de Banco de
+Dados. A comunidade de Banco de Dados desenvolveu Sistemas de Gerência de Banco de Dados (SGBD), que tem por
+objetivo oferecer ferramentas que possibilitam o armazenamento e a manipulação de grandes quantidades de informação
+estruturada e um acesso rápido a elas. A maior preocupação no desenvolvimento deste tipo de sistema é o aspecto de
+modelagem dos dados, as linguagens de consulta e a eficiência na recuperação da informação.
+A comunidade de Inteligência Artificial interessou-se pela mineração de dados (extração de conhecimento a
+partir de pequenas quantidades de dados) e a aprendizagem a partir de um pequeno conjunto de informações. A
+combinação dessas duas abordagens originou a área de Descoberta de Conhecimento em Banco de Dados (DCBD).
+As técnicas tradicionais de aprendizagem descobrem conhecimento a partir de dados extraídos do mundo real, enquanto
+as técnicas de mineração utilizam dados extraídos de bancos de dados. No primeiro caso, os dados de entrada para a
+mineração são representados em uma estrutura simples, e as informações relevantes são definidas pelo especialista. Já no
+segundo caso, além da estrutura e os tipos de dados serem complexos, o volume de informações é muito grande e, parte
+deste conjunto, pode ser irrelevante. Assim, é necessário efetuar dois tratamentos: um, para encontrar um subconjunto de
+informações apropriado e outro para adaptar essas informações em uma estrutura aceitável pelas ferramentas de
+mineração de dados. A seleção das informações relevantes é tão importante quanto o reconhecimento de padrões,
+pois sem os dados apropriados, dificilmente algum conhecimento útil será extraído do banco de dados. Para selecionar a
+amostra adequada é fundamental que haja um entendimento do domínio da aplicação e um prévio conhecimento dos
+dados relevantes, para que se possa estabelecer as metas do processo de descoberta de conhecimento do ponto de vista
+do usuário.
+O segundo tratamento consiste em simplificar a estrutura complexa dos dados para um formato reconhecível pelas
+técnicas de mineração de dados. Neste contexto, o artigo descreve a arquitetura de um sistema que automatiza todas as
+etapas do processo de descoberta de conhecimento em banco de dados, dando ênfase ao pré-processamento. Apresenta,
+também, um estudo de caso realizado para validar a arquitetura proposta. O restante do artigo está organizado da
+seguinte forma: as apresenta as etapas do processo de DCBD tambem é descrita a arquitetura para
+automatizar este processo, suportando dados espaciais, armazenados em estruturas orientadas a objetos. 
+A seleção de dados em bancos de dados é realizada através de linguagens de consulta. A mais comumente usada é
+o SQL (Structure Query Language) . Foin estendida essa linguagem para suportar dados espaciais e não
+espaciais. Os dados não espaciais são informações que descrevem características como: nome, população da cidade, etc.
+Os dados espaciais especificam as localizações dos dados não espaciais e são representados geralmente por três
+primitivas espaciais: ponto, linha e área. Um ponto representa (o aspecto geométrico de) um objeto em sua posição no
+espaço. Para o exemplo, uma cidade pode ser um ponto ou uma área geográfica dependendo da escala do mapa. Uma
+região é uma abstração de um objeto num espaço dimensional, por exemplo um país, um lago, um parque nacional ou
+uma casa, representados num mapa de escala pequena. Uma linha é a abstração para facilitar a locomoção no espaço, ou
+conexões no espaço (estradas, rios, cabos para o telefone, eletricidade, etc.
+A linguagem proposta, denominada LARECOS , se situa na arquitetura ilustra a Figura 2. E ele permite a conexão de
+três sistemas independentes: um Sistema Gerenciador de Banco de Dados Orientado a Objetos (SGBDOO), que
+auxilia na manipulação da estrutura orientada a objetos; um Sistema de Informações Geográficas, que
+manipula os dados espaciais e uma ferramenta de mineração de dados, chamada Salammbô, para gerar uma árvore.
+O SGBDOO oferece um ambiente de desenvolvimento de aplicações que inclui um conjunto de ferramentas de
+interface e permite a construção de um ambiente de desenvolvimento de aplicações geográficas. Seu ambiente gráfico
+e as ferramentas (browsers gráficos, editores gráficos, compilador, etc) reduzem o ciclo de desenvolvimento.
+As aplicações no podem ser desenvolvidas utilizando sua linguagem de quarta geração orientada a objetos e
+extensão da linguagem C, que integra programação, manipulação do banco de dados e a geração da interface ao
+usuário, C, C++ e Smalltalk. Com este arsenal de linguagens disponíveis, o sistema possibilita a incorporação de novas
+classes,de acordo com as necessidades do usuário e a reutilização de códigos pré-existentes, criados em algumas das
+linguagens mencionadas.
+Tambem é possivel criar um ambiente que favorece a prototipação, pois oferece a ferramenta integrada para realizar o
+projeto e a implementação de interfaces gráficas. Ele permite criar, automaticamente, o display gráfico de qualquer
+objeto no banco de dados e oferece um menu através do qual os métodos de um objeto podem ser executados
+O toolbox é um componente que constitui uma biblioteca de classes pré-definidas que podem ser
+utilizadas dentro de contexto de uma aplicação para definir subclasses a partir de suas superclasses. Com relação aos
+dados geográficos, o O2Kit permite a manipulação de imagens e a construção de aplicações gráficas.
+ O  editor fornece um gráfico que pode ser invocado para criar, exibir e editar qualquer tipo de gráfico, fornecendo
+diferentes layouts (grid, tree, DAG, graph, etc). 
+Os Sistemas de Informação Geográfica (SIG) são sistemas capazes de armazenar e manipular dados descritivos e a
+espacialidade (coordenadas x,y) dos dados geográficos. Um SIG trata, também, os relacionamentos espaciais entre
+objetos geográficos, dentre os quais, podemos citar os métricos, os direcionais e os topológicos.
+O Geo2 é um SIG que foi desenvolvido pelo Instituto Geográfico Nacional da França . A
+escolha do Geo2 deu-se pelo fato de ser um SIG acoplado a um SGBDOO.
+Árvore de decisão é uma técnica de aprendizagem que classifica exemplos em um número finito de classes .
+O objetivo desta técnica é elaborar e testar hipóteses sem a intervenção do usuário. A representação gráfica de uma
+árvore é dada por:
+• um nó intermediário: corresponde a uma pergunta sobre a propriedade do objeto, representando um atributo.
+• um arco: corresponde a um valor de atributo.
+• um nó final corresponde a um conjunto da mesma classe.
+Percorrendo a árvore (respondendo as questões dos nós intermediários e seguindo as ligações correspondentes),
+chega-se a um nó final que é a classe do objeto.
+A arquitetura proposta baseia-se em árvores de decisão nebulosas, que são um tipo especial de árvore. Elas são
+baseadas na teoria de conjuntos nebulosos , diferenciando-se das árvores de decisão tradicionais em dois aspectos:
+utilizam critérios de partição imprecisos e, referem-se ao modelo de raciocínio aproximativo. As árvores de decisão
+tradicionais utilizam uma condição precisa, onde um valor satisfaz uma única condição. Nas árvores de decisão
+nebulosas, uma pergunta é realizada sobre um valor nebuloso, gerando um resultado nebuloso. Como exemplo de valor
+nebuloso podemos citar: grande, próximo, longe, etc.
+Os dados de entrada desta técnica são valores nebulosos e a saída é uma árvore de decisão nebulosa. O sistema
+SALAMMBO foi utilizado para implementar essa técnica.
+A cláusula DATAMINING possibilita a definição do algoritmo de mineração de dados que, neste exemplo, é o
+algoritmo de construção de árvores de decisão nebulosa. Ele descobre o número de casas que pertencem, ou não, a uma
+zona urbana, considerando um intervalo impreciso definido pela teoria dos conjuntos nebulosos. A entrada dos dados foi
+gerada pelas cláusulas acima descritas, e alguns exemplos da base de exemplos são mostrados na Tabela 1.
+O resultado da aplicação do sistema SALAMMBO gera uma árvore de decisão nebulosa, que pode ser
+interpretada em forma de regra.
+PAlavras chaves?
+

@@ -1,0 +1,16 @@
+CREATE TABLE Especies (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(40) NOT NULL,
+  descricao VARCHAR(60)
+);
+
+CREATE TABLE Animais (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(20) NOT NULL,
+  data_nasc DATE,
+  peso DECIMAL(9,2),
+  especie_id INT,
+  FOREIGN KEY (especie_id) REFERENCES Especies(id)
+);
+
+INSERT INTO Especies VALUES
