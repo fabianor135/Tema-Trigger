@@ -3,7 +3,8 @@
 Com a criação do Trigger o  gatilho garante que a coluna "DataPedido"
 seja automaticamente preenchida com a data e hora atuais toda 
 vez que alguém insere um novo registro na tabela "Pedidos"
-![image](https://github.com/fabianor135/Tema-Trigger/assets/84815028/08950136-9505-4434-bf61-46a5c256d513)
+![image](https://github.com/fabianor135/Tema-Trigger/assets/84815028/7ed162b1-0694-4272-9138-dfed822b7115)
+
 
 
 
